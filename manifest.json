@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "WifiGod",
+  "version": "1.0",
+  "description": "A Chrome extension to fix wifi dns related issues",
+  "permissions": ["nativeMessaging", "activeTab", "tabs"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
