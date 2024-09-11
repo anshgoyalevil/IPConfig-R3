@@ -22,6 +22,8 @@ if %errorLevel% neq 0 (
     exit /b
 )
 
+set "doubleBackslashPath=%scriptDir:\=\\%\\run_bat.bat"
+
 :: Step 2: Create the Native Messaging Host Manifest
 echo Creating the Native Messaging Host manifest...
 set manifestDir="%LOCALAPPDATA%\Google\Chrome\User Data\NativeMessagingHosts"
@@ -30,7 +32,7 @@ if not exist %manifestDir% mkdir %manifestDir%
     echo { 
     echo   "name": "com.ansh.runbat",
     echo   "description": "Run a bat script from a Chrome extension",
-    echo   "path": "%scriptDir%\\run_bat.bat",
+    echo   "path": "%doubleBackslashPath%",
     echo   "type": "stdio",
     echo   "allowed_origins": [
     echo     "chrome-extension://%extensionID%/"
