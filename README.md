@@ -5,8 +5,9 @@ As the name suggests, IPConfig-R3 is a simple bundle of chrome extension and som
 ## Installation
 
 - Clone the repository to your local machine.
-  
-  `git clone https://github.com/anshgoyalevil/IPConfig-R3`
+  ```bash
+  git clone https://github.com/anshgoyalevil/IPConfig-R3
+  ```
 - Make sure you have the chrome browser installed on your system.
 - Open the chrome browser and type `chrome://extensions/` in the address bar.
 - Enable the developer mode by clicking on the toggle switch on the top right corner.
